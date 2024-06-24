@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlight Cinemas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Starlight Cinemas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Now Showing</h2>
+            <div class="movie-selection">
+                <label for="movie-dropdown">Select a Movie:</label>
+                <select id="movie-dropdown">
+                    <option value="1">Movie 1</option>
+                    <option value="2">Movie 2</option>
+                    <option value="3">Movie 3</option>
+                    <option value="4">Movie 4</option>
+                    <option value="5">Movie 5</option>
+                </select>
+            </div>
+
+            <div class="seat-selection">
+                <div class="screen-container">
+                    <div class="screen">SCREEN</div>
+                </div>
+                <div class="seat-map"></div>
+                <div class="seat-legend">
+                    <div class="seat available">Available</div>
+                    <div class="seat selected">Selected</div>
+                    <div class="seat diamond">Diamond (₹190)</div>
+                    <div class="seat premium-diamond">Premium Diamond (₹300)</div>
+                </div>
+            </div>
+
+            <div class="booking-confirmation" id="booking-confirmation">
+                <h2>Your Booking Summary</h2>
+                <p>Selected Seats: <span id="selected-seats"></span></p>
+                <p>Total Price: <span id="total-price"></span></p>
+                <button id="confirm-booking">Confirm Booking</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Starlight Cinemas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

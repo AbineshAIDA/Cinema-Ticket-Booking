@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  color: #9a9ea3;
+} 
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.movie-selection {
+  margin-bottom: 30px;
+}
+
+.movie-selection label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.movie-selection select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.seat-selection {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.screen-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.screen {
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  width: 60%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: perspective(600px) rotateX(-20deg);
+  transform-origin: bottom;
+}
+
+.seat-map {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.seat-rows {
+  list-style: none;
+  padding: 0;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #65d393;
+  color: #fff;
+}
+
+.seat.diamond {
+  background-color: #cb847c;
+}
+
+.seat.premium-diamond {
+  background-color: #9672a5;
+}
+
+.seat.selected {
+  background-color: #2980b9;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.seat-legend .seat {
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: default;
+}
+
+.booking-confirmation {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
